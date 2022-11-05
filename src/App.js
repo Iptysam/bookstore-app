@@ -16,7 +16,7 @@ class App extends React.PureComponent {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<Books />} />
+          <Route exact path="./" element={<Books />} />
           <Route path="src/components/Categories.js" element={<Categories />} />
         </Routes>
       </Router>
