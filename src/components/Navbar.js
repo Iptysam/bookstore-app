@@ -8,7 +8,7 @@ const Navbar = () => (
         <NavLink to="/" activeStyle>
           Books
         </NavLink>
-        <NavLink to="src/components/Categories.js" activeStyle>
+        <NavLink to="/Categories" activeStyle>
           Categories
         </NavLink>
       </NavMenu>
