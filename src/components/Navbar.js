@@ -5,7 +5,7 @@ const Navbar = () => (
   <>
     <Nav>
       <NavMenu>
-        <NavLink to="./" activeStyle>
+        <NavLink to="/" activeStyle>
           Books
         </NavLink>
         <NavLink to="src/components/Categories.js" activeStyle>
