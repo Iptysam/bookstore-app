@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Math Magicians
+# Bookstore
 
 > You will set up the environment and tools needed to develop a React application.
 > You will develop a React component that will hold the core functionality: a bookstore app.
