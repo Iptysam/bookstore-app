@@ -5,13 +5,14 @@
 > You will set up the environment and tools needed to develop a React application.
 > You will develop a React component that will hold the core functionality: a bookstore app.
 > Add React Router and set two <Route>s and <Link>s for the app's navigation
+> Configure your Redux Store and write actions and reducer for adding and removing books
 
 
 ## Built With
 
 - HTML/CSS
 - Javascript
-- React
+- React and Redux
 - Visual studio code
 
 ## Live Demo (if available)
