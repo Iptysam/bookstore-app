@@ -1,20 +1,20 @@
 const Add = 'Add';
 const Delete = 'Delete';
 
-const initialState = []
+const initialState = [];
 
 export const AddBook = (book) => ({
   type: Add,
-  book
-})
+  book,
+});
 
 export const delBook = (book) => ({
   type: Delete,
-  book
-})
+  book,
+});
 
 const BookReducer = (state = initialState, action) => {
-   switch(action.type) {
+  switch (action.type) {
     case Add: return [
       ...state,
       action.payload,
