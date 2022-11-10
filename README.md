@@ -6,6 +6,9 @@
 > You will develop a React component that will hold the core functionality: a bookstore app.
 > Add React Router and set two <Route>s and <Link>s for the app's navigation
 > Configure your Redux Store and write actions and reducer for adding and removing books
+> Use Redux store to display books
+> Add some UI elements to your components and make them dispatch actions
+
 
 
 ## Built With

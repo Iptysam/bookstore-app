@@ -2,35 +2,35 @@ const ADDBOOK = 'bookstore-app/books/ADDBOOK';
 const DELETEBOOK = 'bookstore-app/books/DELETEBOOK';
 
 const initialState = [
- {
-  id: 1, 
-  title: 'THE GREAT GATSBY',
-  author: 'F. Scott Fitzgerald',
- },
+  {
+    id: 1,
+    title: 'THE GREAT GATSBY',
+    author: 'F. Scott Fitzgerald',
+  },
 
- {
-  id: 2, 
-  title: 'THE SOUND AND THE FURY',
-  author: ' William Faulkner',
- },
+  {
+    id: 2,
+    title: 'THE SOUND AND THE FURY',
+    author: ' William Faulkner',
+  },
 
- {
-  id: 3, 
-  title: 'LOLITA',
-  author: 'Vladimir Nabokov'
- },
+  {
+    id: 3,
+    title: 'LOLITA',
+    author: 'Vladimir Nabokov',
+  },
 
- {
-  id: 4, 
-  title: 'DARKNESS AT NOON',
-  author: 'Arthur Koestler'
- },
+  {
+    id: 4,
+    title: 'DARKNESS AT NOON',
+    author: 'Arthur Koestler',
+  },
 
- {
-  id: 5, 
-  title: 'THE GRAPES OF WRATH',
-  author: 'John Steinbeck'
- },
+  {
+    id: 5,
+    title: 'THE GRAPES OF WRATH',
+    author: 'John Steinbeck',
+  },
 
 ];
 
