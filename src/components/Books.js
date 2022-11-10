@@ -1,6 +1,8 @@
 import React from 'react';
-import Book from './Book';
-import Form from './Form';
+import { useSelector, useDispatch } from 'react-redux';
+// Action Creator
+import { delBook } from '../../redux/books/books';
+
 
 const list = [
   {
