@@ -1,47 +1,75 @@
 const ADDBOOK = 'bookstore-app/books/ADDBOOK';
 const DELETEBOOK = 'bookstore-app/books/DELETEBOOK';
+const GETBOOK = 'bookstore-cms/books/GETBOOK';
 
-const initialState = [
-  {
-    id: 1,
-    title: 'THE GREAT GATSBY',
-    author: 'F. Scott Fitzgerald',
-  },
+const initialState = [];
 
-  {
-    id: 2,
-    title: 'THE SOUND AND THE FURY',
-    author: ' William Faulkner',
-  },
+const getBooksAPI = async () => {
+  const API = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/GYZ4VCm0OI0zBZ9BBlYy/books';
+  const resp = await fetch(API, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+  const booksArray = await resp.json();
+  const books = Object.keys(booksArray).map((id) => ({
+    id,
+    title: booksArray[id][0].title,
+    author: booksArray[id][0].author,
+  }));
+  return books;
+};
 
-  {
-    id: 3,
-    title: 'LOLITA',
-    author: 'Vladimir Nabokov',
-  },
-
-  {
-    id: 4,
-    title: 'DARKNESS AT NOON',
-    author: 'Arthur Koestler',
-  },
-
-  {
-    id: 5,
-    title: 'THE GRAPES OF WRATH',
-    author: 'John Steinbeck',
-  },
-
-];
-
-export const AddBook = (book) => ({
-  type: ADDBOOK,
-  payload: book,
+export const getBook = () => (async (dispatch) => {
+  const books = await getBooksAPI();
+  dispatch({ type: GETBOOK, payload: books });
 });
 
-export const delBook = (id) => ({
-  type: DELETEBOOK,
-  payload: id,
+const addBooksAPI = async ({
+  id, title, author, category,
+}) => {
+  const API = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/GYZ4VCm0OI0zBZ9BBlYy/books';
+  const data = await fetch(API, {
+    method: 'POST',
+    body: JSON.stringify({
+      item_id: id,
+      title,
+      author,
+      category,
+    }),
+    headers: { 'Content-Type': 'application/json' },
+  });
+  await data.text();
+};
+
+export const AddBook = (book) => (async (dispatch) => {
+  await addBooksAPI(book);
+
+  dispatch({
+    type: ADDBOOK,
+    payload: book,
+  });
+});
+
+const delBookAPI = async (id) => {
+  const API = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/GYZ4VCm0OI0zBZ9BBlYy/books';
+  const data = await fetch(`${API}/${id}`, {
+    method: 'DELETE',
+    body: JSON.stringify({
+      item_id: id,
+    }),
+    headers: { 'Content-Type': 'application/json' },
+  });
+  await data.text();
+};
+
+export const delBook = (id) => (async (dispatch) => {
+  await delBookAPI(id);
+  dispatch({
+    type: DELETEBOOK,
+    payload: id,
+  });
 });
 
 const BookReducer = (state = initialState, action) => {
@@ -52,6 +80,8 @@ const BookReducer = (state = initialState, action) => {
     ];
     case DELETEBOOK:
       return state.filter((book) => book.id !== action.payload);
+    case GETBOOK:
+      return action.payload;
 
     default: return state;
   }
