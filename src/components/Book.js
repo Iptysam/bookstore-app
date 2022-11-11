@@ -2,11 +2,16 @@ import React from 'react';
 import Proptypes from 'prop-types';
 import '../App.css';
 import { useDispatch } from 'react-redux';
-import { delBook } from '../redux/books/books';
+import { getBook, delBook } from '../redux/books/books';
 
 const Book = (props) => {
   const { id, title, author } = props;
   const dispatch = useDispatch();
+
+  const handledelBook = (id) => {
+    dispatch(delBook(id));
+    dispatch(getBook());
+  };
 
   return (
     <div className="books-wrap">
@@ -15,7 +20,7 @@ const Book = (props) => {
           <h2>{title}</h2>
           <p>{author}</p>
           <button type="button">Comments</button>
-          <button onClick={() => (dispatch(delBook(id)))} type="submit">Remove</button>
+          <button onClick={() => (handledelBook(id))} type="submit">Remove</button>
           <button type="button">edit</button>
         </div>
         <div className="book-meter">
