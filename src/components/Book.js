@@ -15,7 +15,7 @@ const Book = (props) => {
           <h2>{title}</h2>
           <p>{author}</p>
           <button type="button">Comments</button>
-          <button onClick={() => dispatch(delBook({ id, dispatch }))} type="submit">Remove</button>
+          <button onClick={() => (dispatch(delBook(id)))} type="submit">Remove</button>
           <button type="button">edit</button>
         </div>
         <div className="book-meter">

@@ -1,16 +1,16 @@
 const CHECKSTATUS = 'bookstore-app/categories/CHECKSTATUS';
 
-const initialState = [];
+const initialState = '';
 
-export const CheckStatus = (category) => ({
+export const CheckStatus = () => ({
   type: CHECKSTATUS,
-  category,
+  category: 'Under Construction',
 });
 
 const categoryReducer = (state = initialState, action) => {
   switch (action.type) {
     case CHECKSTATUS:
-      return 'Under Construction';
+      return action.category;
 
     default: return state;
   }

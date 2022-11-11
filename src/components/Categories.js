@@ -3,8 +3,8 @@ import { CheckStatus } from '../redux/categories/categories';
 
 const Categories = () => {
   const dispatch = useDispatch();
-  const categories = useSelector((state) => state.categories);
-
+  const categories = useSelector((state) => state.category);
+  console.log(categories);
   return (
     <>
       <h1>{categories}</h1>
