@@ -4,13 +4,9 @@ import '../App.css';
 import { useDispatch } from 'react-redux';
 import { delBook } from '../redux/books/books';
 
-const Book = (arg) => {
-  const { id, title, author } = arg;
+const Book = (props) => {
+  const { id, title, author } = props;
   const dispatch = useDispatch();
-
-  const handleRemoveBook = (id) => {
-    dispatch(delBook(id));
-  };
 
   return (
     <div className="books-wrap">
@@ -19,7 +15,7 @@ const Book = (arg) => {
           <h2>{title}</h2>
           <p>{author}</p>
           <button type="button">Comments</button>
-          <button onClick={() => handleRemoveBook(id)} type="button">Remove</button>
+          <button onClick={() => dispatch(delBook({ id, dispatch }))} type="submit">Remove</button>
           <button type="button">edit</button>
         </div>
         <div className="book-meter">

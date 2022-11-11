@@ -34,14 +34,14 @@ const initialState = [
 
 ];
 
-export const AddBook = (payload) => ({
+export const AddBook = (book) => ({
   type: ADDBOOK,
-  payload,
+  payload: book,
 });
 
-export const delBook = (payload) => ({
+export const delBook = (id) => ({
   type: DELETEBOOK,
-  payload,
+  payload: id,
 });
 
 const BookReducer = (state = initialState, action) => {
@@ -50,9 +50,9 @@ const BookReducer = (state = initialState, action) => {
       ...state,
       action.payload,
     ];
-    case DELETEBOOK: return [
-      ...state.filter((each) => each.id !== action.payload.id),
-    ];
+    case DELETEBOOK:
+      return state.filter((book) => book.id !== action.payload);
+
     default: return state;
   }
 };
