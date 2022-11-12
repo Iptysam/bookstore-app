@@ -17,20 +17,34 @@ const Book = (props) => {
     <div className="books-wrap">
       <div className="book-wrapper">
         <div className="book-title">
-          <h2>{title}</h2>
-          <p>{author}</p>
-          <button type="button">Comments</button>
-          <button onClick={() => (handledelBook(id))} type="submit">Remove</button>
-          <button type="button">edit</button>
+          <p className="category">Fiction</p>
+          <h2 className="title">{title}</h2>
+          <p className="author">{author}</p>
+          <div className="buttons">
+            <button type="button" className="comments">Comments</button>
+            <div className="Line-2" />
+            <button onClick={() => (handledelBook(id))} type="submit" className="remove">Remove</button>
+            <div className="Line-2" />
+            <button type="button">Edit</button>
+          </div>
         </div>
-        <div className="book-meter">
-          <h2>64%</h2>
-          <p>Completed</p>
+        <div className="circular">
+          <div className="spinner" />
+          <div>
+            <h2>
+              {Math.floor(Math.random() * 100)}
+              %
+            </h2>
+            <p>Completed</p>
+          </div>
+          <div className="Line-3" />
         </div>
-        <div>
-          <p>CURRENT CHAPTER</p>
-          <p>Chapter 17</p>
-          <button type="button">UPDATE PROGRESS</button>
+        <div className="chapter-details">
+          <p className="current">CURRENT CHAPTER</p>
+          <p className="chapterno">Chapter 17</p>
+          <div className="rectangle">
+            <button type="button">UPDATE PROGRESS</button>
+          </div>
         </div>
       </div>
     </div>

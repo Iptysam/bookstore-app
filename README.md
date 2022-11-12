@@ -8,8 +8,8 @@
 > Configure your Redux Store and write actions and reducer for adding and removing books
 > Use Redux store to display books
 > Add some UI elements to your components and make them dispatch actions
-
-
+> Add styling.
+> You will use Zeplin as a collaboration tool.
 
 ## Built With
 
